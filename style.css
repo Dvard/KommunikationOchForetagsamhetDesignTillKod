@@ -1,0 +1,136 @@
+.container-holder {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background: url('background.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#card {
+    background-color: #fff;
+    height: 80vh;
+    width: 70%;
+}
+
+#tabs {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tab-box {
+    height: 50px;
+    text-align: center;
+    background-color: gray;
+}
+
+#tabs .active {
+    background-color: white;
+}
+
+.tab-box:hover {
+    cursor: pointer;
+    background-color: lightgrey;
+}
+
+.tab-box:hover p {
+    color: #1f1f1f;
+}
+
+.tab-box p {
+    color: green;
+    font-size: 2em;
+}
+
+.tab-content {
+    padding: 20px;
+    height: 100%;
+    margin-top: 60px;
+}
+
+#tab2-content {
+    display: none;
+}
+
+.tab-content .row {
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.box {
+    height: 200px;
+    width: 200px;
+    padding: 5px;
+}
+
+.box-2 {
+    height: 100px;
+}
+
+.box-2 img {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin-top: 25%;
+}
+
+.inner-box {
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+}
+
+.inner-box p {
+    font-size: 2em;
+    color: #fff;
+}
+
+
+.green-gradiant {
+    background: rgb(11,36,0);
+    background: linear-gradient(90deg, rgba(11,36,0,1) 5%, rgba(26,121,9,1) 78%);
+}
+.blue-gradiant {
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 2%, rgba(9,9,121,1) 81%);
+}
+.yellow-gradiant {
+    background: rgb(255,222,0);
+    background: linear-gradient(90deg, rgba(255,222,0,1) 0%, rgba(121,105,9,1) 52%);
+}
+.grey-gradiant {
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgb(15, 15, 15) 0%, rgb(34, 34, 33) 27%, rgb(251, 251, 251) 100%);
+}
+
+#nav {
+    width: 100%;
+    height: 30;
+    background-color: #fff;
+    padding: 2px;
+    position: absolute;
+    bottom: 0;
+}
+
+#nav .row {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottom-nav-item {
+    padding: 5px;
+}
+
+.bottom-nav-item img {
+    height: 40px;
+}
