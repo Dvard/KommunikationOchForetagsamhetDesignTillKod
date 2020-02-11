@@ -1,116 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Design till kod</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie-edge">
+	<title>Design Till Kod</title>
 	
-	<!-- Bootstrap -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
 	<!-- CSS -->
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-    
-    <div class="container-holder">
-        <div id="nav">
-            <div class="row">
-                <div class="bottom-nav-item col-4">
-                    <img src="img/home.svg">
-                </div>
-                <div class="bottom-nav-item col-4">
-                    <img src="img/search.svg">
-                </div>
-                <div class="bottom-nav-item col-4">
-                    <img src="img/menu.svg">
-                </div>
-            </div>
-        </div>
-        <div id="card">
-            <div class="row" id="tabs">
-                <div class="col-6 tab-box active" id="tab1" onclick="openTab('tab1')">
-                    <p>tab1</p>
-                </div>
-                <div class="col-6 tab-box" id="tab2" onclick="openTab('tab2')">
-                    <p>tab2</p>
-                </div>
-            </div>
-            <div id="tab1-content" class="tab-content">
-                <div class="row">
-                    <div class="col-6 box">
-                        <div class="inner-box green-gradiant">
-                            <p>Lorem ipsum</p>
-                        </div>
-                    </div>
-                    <div class="col-6 box">
-                        <div class="inner-box blue-gradiant">
-                            <p>Lorem ipsum</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-6 box">
-                        <div class="inner-box yellow-gradiant">
-                            <p>Lorem ipsum</p>
-                        </div>
-                    </div>
-                    <div class="col-6 box">
-                        <div class="inner-box grey-gradiant">
-                            <p>Lorem ipsum</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div id="tab2-content" class="tab-content">
-                <div class="row">
-                    <div class="col-12 box box-2">
-                        <div class="inner-box green-gradiant">
-                            <div class="row">
-                                <div class="col-2">
-                                    <img src="background.jpg">
-                                </div>
-                                <div class="col-10">
-                                    <p>Lorem ipsum</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-12 box box-2">
-                        <div class="inner-box blue-gradiant">
-                            <div class="row">
-                                <div class="col-2">
-                                    <img src="background.jpg">
-                                </div>
-                                <div class="col-10">
-                                    <p>Lorem ipsum</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-12 box box-2">
-                        <div class="inner-box yellow-gradiant">
-                            <div class="row">
-                                <div class="col-2">
-                                    <img src="background.jpg">
-                                </div>
-                                <div class="col-10">
-                                    <p>Lorem ipsum</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+	<div class="container-fluid">
+		<div id="inner">
+			<div id="card" class="row">
+				<div class="col-12" id="tab-section">
+					<div class="row">
+						<div id="tab1-btn" class="col-6 tab-btn"  onclick="openTab(1)">
+							<p>Tab 1</p>
+						</div>
+						<div id="tab2-btn" class="col-6 tab-btn tab-btn-active" onclick="openTab(2)">
+							<p>Tab 2</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-12" id="tab1-content">
+					<div class="card-inner row">
+						<div class="col-12">
+							<div class="row">
+								<div class="col-6">
+									<p class="card-box card-box-green">Lorem ipsum</p>
+								</div>
+								<div class="col-6">
+									<p class="card-box card-box-purple">Lorem ipsum</p>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-6">
+									<p class="card-box card-box-yellow">Lorem ipsum</p>
+								</div>
+								<div class="col-6">
+									<p class="card-box card-box-gray">Lorem ipsum</p>								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12" id="tab2-content">
+					<div class="card-inner row">
+						<div class="col-12">
+							<div class="row">
+								<div class="col-12 card-box card-box-green">
+									<div class="row">
+										<div class="col-4">
+											<img src="bg.jpg" class="card-img">
+										</div>
+										<div class="col-8">
+											<p>Lorem ipsum</p>
+										</div>
+									</div>
+								</div>
+								<div class="col-12 card-box card-box-purple">
+									<div class="row">
+										<div class="col-4">
+											<img src="bg.jpg" class="card-img">
+										</div>
+										<div class="col-8">
+											<p>Lorem ipsum</p>
+										</div>
+									</div>
+								</div>
+								<div class="col-12 card-box card-box-yellow">
+									<div class="row">
+										<div class="col-4">
+											<img src="bg.jpg" class="card-img">
+										</div>
+										<div class="col-8">
+											<p>Lorem ipsum</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div id="bottom-bar">
+		<div class="row">
+			<div class="col-4">
+				<i class="fa fa-home"></i>
+			</div>
+			<div class="col-4">
+				<i class="fa fa-search"></i>
+			</div>
+			<div class="col-4">
+				<i class="fa fa-bars"></i>
+			</div>
+		</div>
+	</div>
 
-    <script src="main.js"></script>
-
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	<script src="js/main.js"></script>
 </body>
+
 </html>
